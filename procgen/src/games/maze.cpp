@@ -136,3 +136,7 @@ class MazeGame : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, MazeGame);
+
+std::shared_ptr<Game> make_maze(void) {
+    return std::make_shared<MazeGame>();
+}

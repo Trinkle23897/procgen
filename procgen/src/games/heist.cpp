@@ -224,3 +224,7 @@ class HeistGame : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, HeistGame);
+
+std::shared_ptr<Game> make_heist(void) {
+    return std::make_shared<HeistGame>();
+}

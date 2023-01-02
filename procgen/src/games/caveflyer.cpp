@@ -325,3 +325,7 @@ class CaveFlyerGame : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, CaveFlyerGame);
+
+std::shared_ptr<Game> make_caveflyer(void) {
+    return std::make_shared<CaveFlyerGame>();
+}

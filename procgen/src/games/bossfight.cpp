@@ -478,3 +478,7 @@ class BossfightGame : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, BossfightGame);
+
+std::shared_ptr<Game> make_bossfight(void) {
+    return std::make_shared<BossfightGame>();
+}

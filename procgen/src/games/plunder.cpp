@@ -278,3 +278,7 @@ class PlunderGame : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, PlunderGame);
+
+std::shared_ptr<Game> make_plunder(void) {
+    return std::make_shared<PlunderGame>();
+}

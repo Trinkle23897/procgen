@@ -469,3 +469,7 @@ class Jumper : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, Jumper);
+
+std::shared_ptr<Game> make_jumper(void) {
+    return std::make_shared<Jumper>();
+}

@@ -119,3 +119,7 @@ class BigFish : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, BigFish);
+
+std::shared_ptr<Game> make_bigfish(void) {
+    return std::make_shared<BigFish>();
+}

@@ -521,3 +521,7 @@ class CoinRun : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, CoinRun);
+
+std::shared_ptr<Game> make_coinrun(void) {
+    return std::make_shared<CoinRun>();
+}

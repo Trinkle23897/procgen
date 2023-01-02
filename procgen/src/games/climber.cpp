@@ -341,3 +341,7 @@ class Climber : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, Climber);
+
+std::shared_ptr<Game> make_climber(void) {
+    return std::make_shared<Climber>();
+}

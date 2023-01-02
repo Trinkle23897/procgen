@@ -413,3 +413,7 @@ class ChaserGame : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, ChaserGame);
+
+std::shared_ptr<Game> make_chaser(void) {
+    return std::make_shared<ChaserGame>();
+}

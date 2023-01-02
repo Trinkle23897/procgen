@@ -443,3 +443,7 @@ class StarPilotGame : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, StarPilotGame);
+
+std::shared_ptr<Game> make_starpilot(void) {
+    return std::make_shared<StarPilotGame>();
+}

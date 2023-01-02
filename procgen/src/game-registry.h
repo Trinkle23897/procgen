@@ -34,3 +34,21 @@ int registerGame(std::string name, Func fn) {
     (*globalGameRegistry)[name] = fn;
     return 0;
 }
+
+// envpool patch, static funciton initialization order is undefined
+std::shared_ptr<Game> make_bigfish(void);
+std::shared_ptr<Game> make_bossfight(void);
+std::shared_ptr<Game> make_caveflyer(void);
+std::shared_ptr<Game> make_chaser(void);
+std::shared_ptr<Game> make_climber(void);
+std::shared_ptr<Game> make_coinrun(void);
+std::shared_ptr<Game> make_dodgeball(void);
+std::shared_ptr<Game> make_fruitbot(void);
+std::shared_ptr<Game> make_heist(void);
+std::shared_ptr<Game> make_jumper(void);
+std::shared_ptr<Game> make_leaper(void);
+std::shared_ptr<Game> make_maze(void);
+std::shared_ptr<Game> make_miner(void);
+std::shared_ptr<Game> make_ninja(void);
+std::shared_ptr<Game> make_plunder(void);
+std::shared_ptr<Game> make_starpilot(void);

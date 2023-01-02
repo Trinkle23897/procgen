@@ -436,3 +436,7 @@ class Ninja : public BasicAbstractGame {
 };
 
 REGISTER_GAME(NAME, Ninja);
+
+std::shared_ptr<Game> make_ninja(void) {
+    return std::make_shared<Ninja>();
+}
