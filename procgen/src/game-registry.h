@@ -52,3 +52,10 @@ std::shared_ptr<Game> make_miner(void);
 std::shared_ptr<Game> make_ninja(void);
 std::shared_ptr<Game> make_plunder(void);
 std::shared_ptr<Game> make_starpilot(void);
+
+/*
+   game factory method for fetching a game instance
+   the original globalGameRegistry may be nullptr because in g++
+   static function initialization order is undefined
+ */
+std::shared_ptr<Game> make_game(const std::string& name);
